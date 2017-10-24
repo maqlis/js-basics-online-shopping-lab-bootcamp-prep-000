@@ -33,7 +33,7 @@ function viewCart() {
     var ret = `In your cart, you have ${ itemAndPrice[0] }.`
     console.log(ret)
   }
-  else if(cart.length ===2){
+  else if(cart.length === 2){
     console.log( `In your cart, you have ${ itemAndPrice[0] } and ${ itemAndPrice[1] }.` )
   }
   else {
@@ -80,3 +80,6 @@ function placeOrder(cardNumber) {
     cart = []
   }
 }
+addToCart("apple")
+addToCart("banana")
+viewCart()
