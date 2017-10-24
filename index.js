@@ -22,7 +22,7 @@ function viewCart() {
     console.log("Your shopping cart is empty.")
   }
   else{
-    itemAndPrice = []
+    var itemAndPrice = []
     for( var i=0; i<cart.length; i++){
       item = Object.keys(cart[i])[0]
       price = cart[0][item]
