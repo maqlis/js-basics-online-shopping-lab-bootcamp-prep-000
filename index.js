@@ -28,7 +28,7 @@ function viewCart() {
       price = cart[0][item]
       itemAndPrice.push(`${item} at $${price}`)
     }
-    
+
    if(cart.length === 1){
     var ret = `In your cart, you have ${ itemAndPrice[0] }.`
     console.log(ret)
