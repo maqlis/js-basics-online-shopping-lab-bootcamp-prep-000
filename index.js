@@ -26,9 +26,9 @@ function viewCart() {
     for( var i=0; i<cart.length; i++){
       item = Object.keys(cart[i])[0]
       price = cart[0][item]
-      itemAndPrice.push(`${item} at ${price}`)
+      itemAndPrice.push(`${item} at $${price}`)
     }
-
+    
    if(cart.length === 1){
     var ret = `In your cart, you have ${ itemAndPrice[0] }.`
     console.log(ret)
